@@ -41,16 +41,19 @@
 
   <!-- Hero -->
   <section class="relative overflow-hidden h-[75vh] md:h-[80vh]">
-    <img src="assets/img/hero-brand.webp" alt="UMRI Umroh Mandiri" class="hero-bg-img absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50"></div>
+    <picture class="absolute inset-0 w-full h-full">
+      <source media="(min-width: 768px)" srcset="assets/img/hero-brand.webp">
+      <img src="assets/img/umri-portrait.webp" alt="UMRI Umroh Mandiri" class="w-full h-full object-cover object-center">
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50 hidden md:block"></div>
     <div class="relative z-10 flex flex-col justify-end h-full pb-12 md:pb-16 text-center">
-      <div class="max-w-6xl mx-auto px-6 fade-in-up">
+      <div class="max-w-6xl mx-auto px-6 fade-in-up hidden md:block">
         <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow">
           Semua yang Anda butuhkan untuk merencanakan umrah mandiri yang tenang dan bermakna.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="umrah-guide.html" class="btn-secondary border-white/60 text-white hover:bg-white/10">Mulai Panduan Umrah</a>
-          <a href="plan-umrah.html" class="btn-secondary border-white/60 text-white hover:bg-white/10">Rencanakan Perjalanan</a>
+          <a href="umrah-guide.html" class="btn-secondary bg-white/15 border-white/80 text-white hover:bg-white/25">Mulai Panduan Umrah</a>
+          <a href="plan-umrah.html" class="btn-secondary border-white/40 text-white/80 hover:bg-white/10">Rencanakan Perjalanan</a>
         </div>
       </div>
     </div>

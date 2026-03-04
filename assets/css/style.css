@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
   border: 1px solid rgba(41, 62, 96, 0.06);
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   color: #3a78b3;
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
 
 /* Sections */
@@ -798,12 +799,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem !important;
   }
 
-  .hero-bg-img {
-    object-fit: cover;
-    background-color: #1a3a5c;
-    transform: scale(0.6);
-    transform-origin: center center;
-  }
 }
 
 @media (max-width: 480px) {
