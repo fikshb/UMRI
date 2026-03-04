@@ -1,0 +1,810 @@
+/* UMRI — Custom Styles (complement Tailwind CDN) */
+/* Brand Colors:
+   Primary Sky Blue: #3a78b3
+   Dark Navy: #293e60
+   Warm Gold: #dbab76
+   Soft Background: #f8f7f4
+   White: #ffffff
+*/
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #293e60;
+  background-color: #f8f7f4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #293e60;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Navigation */
+.nav-container {
+  backdrop-filter: blur(12px);
+  background-color: rgba(248, 247, 244, 0.92);
+  border-bottom: 1px solid rgba(41, 62, 96, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-container.scrolled {
+  box-shadow: 0 2px 20px rgba(41, 62, 96, 0.08);
+}
+
+.nav-link {
+  position: relative;
+  color: #293e60;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3a78b3;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #3a78b3;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #293e60;
+}
+
+.logo span {
+  color: #3a78b3;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #f8f7f4 0%, #eef3f9 50%, #f8f7f4 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  background: linear-gradient(180deg, rgba(58, 120, 179, 0.03) 0%, rgba(248, 247, 244, 0) 100%);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #3a78b3;
+  color: #ffffff;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #2e6399;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(58, 120, 179, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #3a78b3;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1.5px solid #3a78b3;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(58, 120, 179, 0.06);
+  transform: translateY(-1px);
+}
+
+.btn-gold {
+  background-color: #dbab76;
+  color: #293e60;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  background-color: #c99a65;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(219, 171, 118, 0.3);
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(41, 62, 96, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(41, 62, 96, 0.08);
+  border-color: rgba(58, 120, 179, 0.15);
+}
+
+.card-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(58, 120, 179, 0.1), rgba(58, 120, 179, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a78b3;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #293e60;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #5a6f8a;
+  max-width: 600px;
+}
+
+/* Accordion / FAQ */
+.accordion-item {
+  background: #ffffff;
+  border: 1px solid rgba(41, 62, 96, 0.08);
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.accordion-item.active {
+  border-color: rgba(58, 120, 179, 0.2);
+}
+
+.accordion-header {
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #293e60;
+  transition: color 0.2s ease;
+}
+
+.accordion-header:hover {
+  color: #3a78b3;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+  color: #3a78b3;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content-inner {
+  padding: 0 1.5rem 1.25rem;
+  color: #5a6f8a;
+  line-height: 1.7;
+}
+
+/* Flow Steps */
+.flow-step {
+  position: relative;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.flow-step::before {
+  content: '';
+  position: absolute;
+  left: 0.875rem;
+  top: 2rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #3a78b3, rgba(58, 120, 179, 0.1));
+}
+
+.flow-step:last-child::before {
+  display: none;
+}
+
+.flow-step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #3a78b3;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Pricing Cards */
+.pricing-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(41, 62, 96, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(41, 62, 96, 0.1);
+}
+
+.pricing-card.featured {
+  border-color: #dbab76;
+  box-shadow: 0 8px 24px rgba(219, 171, 118, 0.15);
+}
+
+.pricing-card.featured::before {
+  content: 'Recommended';
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dbab76;
+  color: #293e60;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Checklist */
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(41, 62, 96, 0.05);
+}
+
+.checklist-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: rgba(58, 120, 179, 0.1);
+  color: #3a78b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  margin-top: 0.15rem;
+}
+
+/* Table */
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(41, 62, 96, 0.08);
+}
+
+.styled-table thead th {
+  background: #293e60;
+  color: #ffffff;
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.styled-table tbody td {
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid rgba(41, 62, 96, 0.06);
+  font-size: 0.9rem;
+}
+
+.styled-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.styled-table tbody tr:hover {
+  background: rgba(58, 120, 179, 0.03);
+}
+
+.styled-table tfoot td {
+  background: rgba(58, 120, 179, 0.05);
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tag-blue {
+  background: rgba(58, 120, 179, 0.1);
+  color: #3a78b3;
+}
+
+.tag-gold {
+  background: rgba(219, 171, 118, 0.15);
+  color: #b8884e;
+}
+
+.tag-navy {
+  background: rgba(41, 62, 96, 0.1);
+  color: #293e60;
+}
+
+/* Footer */
+.footer {
+  background: #293e60;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4rem 0 2rem;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #dbab76;
+}
+
+.footer h4 {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mobile Navigation */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 60;
+  transition: right 0.3s ease;
+  box-shadow: -8px 0 24px rgba(41, 62, 96, 0.1);
+  padding: 5rem 2rem 2rem;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 62, 96, 0.3);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu .nav-link {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(41, 62, 96, 0.06);
+}
+
+/* Hamburger */
+.hamburger {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #293e60;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Itinerary Tabs */
+.tab-btn {
+  padding: 0.625rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #5a6f8a;
+  background: transparent;
+  border: 1.5px solid rgba(41, 62, 96, 0.12);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background: #3a78b3;
+  color: #ffffff;
+  border-color: #3a78b3;
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: #3a78b3;
+  color: #3a78b3;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* WhatsApp Form */
+.wa-form input,
+.wa-form select,
+.wa-form textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1.5px solid rgba(41, 62, 96, 0.12);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #293e60;
+  background: #ffffff;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.wa-form input:focus,
+.wa-form select:focus,
+.wa-form textarea:focus {
+  outline: none;
+  border-color: #3a78b3;
+  box-shadow: 0 0 0 3px rgba(58, 120, 179, 0.1);
+}
+
+.wa-form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #293e60;
+  margin-bottom: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Masjid Guide Header Animations */
+.animate-draw-line {
+  width: 0;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-draw-line.visible {
+  width: 3rem;
+}
+
+.animate-title {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+}
+
+.animate-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-subtitle {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s;
+}
+
+.animate-subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-indicator-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease 0.7s, transform 0.5s ease 0.7s;
+}
+
+.animate-indicator-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-divider {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.4s ease 0.8s, transform 0.4s ease 0.8s;
+}
+
+.animate-divider.visible {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.animate-indicator-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease 0.9s, transform 0.5s ease 0.9s;
+}
+
+.animate-indicator-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide-in Cards */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.15s, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Masjid Card Internal Animations */
+.masjid-card {
+  overflow: hidden;
+}
+
+.masjid-card-img {
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 0.8s ease, transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.masjid-card.visible .masjid-card-img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.masjid-card-header {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.masjid-card.visible .masjid-card-header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.masjid-card-section {
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.masjid-card.visible .masjid-card-section:nth-child(1) {
+  transition-delay: 0.45s;
+}
+.masjid-card.visible .masjid-card-section:nth-child(2) {
+  transition-delay: 0.6s;
+}
+.masjid-card.visible .masjid-card-section:nth-child(3) {
+  transition-delay: 0.75s;
+}
+.masjid-card.visible .masjid-card-section:nth-child(4) {
+  transition-delay: 0.9s;
+}
+
+.masjid-card.visible .masjid-card-section {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.masjid-card-tips {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease 1s, transform 0.6s ease 1s, box-shadow 0.6s ease 1.3s;
+}
+
+.masjid-card.visible .masjid-card-tips {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: inset 0 0 0 1px rgba(219, 171, 118, 0.2);
+}
+
+/* Accent top border on masjid cards */
+.masjid-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent, #3a78b3);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.masjid-card.visible::before {
+  transform: scaleX(1);
+}
+
+.masjid-card[data-accent="#dbab76"] {
+  --accent: #dbab76;
+  position: relative;
+}
+
+.masjid-card[data-accent="#3a78b3"] {
+  --accent: #3a78b3;
+  position: relative;
+}
+
+/* Decorative */
+.gold-line {
+  width: 3rem;
+  height: 3px;
+  background: #dbab76;
+  border-radius: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+}

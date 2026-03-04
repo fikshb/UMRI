@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMRI - The Guide to Umrah Mandiri</title>
+  <meta name="description" content="UMRI adalah pusat informasi untuk merencanakan umrah mandiri dengan lebih jelas, tenang, dan terstruktur.">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html"><img src="assets/img/logo-icon.webp" alt="UMRI" class="h-8 w-8 rounded-md"></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="umrah-guide.html" class="nav-link">Umrah Guide</a>
+        <a href="plan-umrah.html" class="nav-link">Plan Your Umrah</a>
+        <a href="makkah-madinah.html" class="nav-link">Makkah & Madinah</a>
+        <a href="services.html" class="nav-link">Services</a>
+      </div>
+      <div class="md:hidden hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="umrah-guide.html" class="nav-link">Umrah Guide</a>
+    <a href="plan-umrah.html" class="nav-link">Plan Your Umrah</a>
+    <a href="makkah-madinah.html" class="nav-link">Makkah & Madinah</a>
+    <a href="services.html" class="nav-link">Services</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden h-[75vh] md:h-[80vh]">
+    <img src="assets/img/hero-brand.webp" alt="UMRI Umroh Mandiri" class="absolute inset-0 w-full h-full object-cover object-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50"></div>
+    <div class="relative z-10 flex flex-col justify-end h-full pb-12 md:pb-16 text-center">
+      <div class="max-w-6xl mx-auto px-6 fade-in-up">
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow">
+          Semua yang Anda butuhkan untuk merencanakan umrah mandiri yang tenang dan bermakna.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="umrah-guide.html" class="btn-secondary border-white/60 text-white hover:bg-white/10">Mulai Panduan Umrah</a>
+          <a href="plan-umrah.html" class="btn-secondary border-white/60 text-white hover:bg-white/10">Rencanakan Perjalanan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore UMRI -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">Explore UMRI</h2>
+        <p class="section-subtitle mx-auto">Temukan semua yang Anda butuhkan untuk perjalanan umrah yang tenang dan bermakna.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <a href="umrah-guide.html" class="card fade-in-up block">
+          <div class="card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Umrah Mandiri Guide</h3>
+          <p class="text-sm text-[#5a6f8a]">Panduan lengkap dari perencanaan hingga kepulangan. Langkah demi langkah.</p>
+        </a>
+        <!-- Card 2 -->
+        <a href="plan-umrah.html" class="card fade-in-up block">
+          <div class="card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Plan Your Umrah</h3>
+          <p class="text-sm text-[#5a6f8a]">Estimasi biaya, contoh itinerary, dan checklist persiapan umrah.</p>
+        </a>
+        <!-- Card 3 -->
+        <a href="makkah-madinah.html" class="card fade-in-up block">
+          <div class="card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657 13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Makkah & Madinah</h3>
+          <p class="text-sm text-[#5a6f8a]">Panduan masjid, tempat bersejarah, dan tips praktis di Tanah Suci.</p>
+        </a>
+        <!-- Card 4 -->
+        <a href="services.html" class="card fade-in-up block">
+          <div class="card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0V9a2 2 0 0 0-2-2M5 11V9a2 2 0 0 1 2-2m0 0V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 7h10"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Services & Tools</h3>
+          <p class="text-sm text-[#5a6f8a]">Paket umrah, visa, dan tools digital untuk perjalanan Anda.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflections on Umrah -->
+  <section class="section section-alt">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-stretch fade-in-up">
+        <div class="rounded-2xl overflow-hidden">
+          <img src="assets/img/umrah-tawaf.webp" alt="Jamaah melakukan tawaf di Masjidil Haram" class="w-full h-full min-h-[400px] object-cover">
+        </div>
+        <div>
+          <div class="gold-line mb-6"></div>
+          <h2 class="section-title">Reflections on Umrah</h2>
+        <div class="mt-8 space-y-6 text-[#5a6f8a] leading-relaxed text-lg">
+          <p>
+            Umrah bukan sekadar perjalanan. Ia adalah keputusan. Keputusan untuk kembali, untuk menyelaraskan kembali, untuk menghidupkan kembali hubungan kita dengan Allah.
+          </p>
+          <p>
+            Kata <em>umrah</em> berasal dari akar kata Arab <em>'amara</em>, yang berarti menghidupkan, membangun, membawa kehidupan kembali. Umrah bukan sekadar ziarah. Ia adalah tindakan pembaruan.
+          </p>
+          <p>
+            Ketika kita mengenakan ihram, kita menanggalkan identitas duniawi. Ketika kita bertawaf, kita mengorbit pusat yang lebih besar dari diri kita sendiri. Ketika kita berlari antara Safa dan Marwah, kita menghidupkan kembali pencarian yang penuh kepercayaan kepada Allah.
+          </p>
+          <p>
+            Setiap langkah dalam umrah adalah undangan untuk hadir sepenuhnya. Bukan terburu-buru, bukan sekadar menyelesaikan ritual, tetapi benar-benar <strong>mengalaminya</strong>.
+          </p>
+          <p class="text-[#293e60] font-medium italic">
+            "Karena ibadah paling bermakna ketika ia dipilih. Bukan terburu-buru, bukan dipaksakan, bukan diserahkan kepada orang lain."
+          </p>
+        </div>
+        </div><!-- close right column -->
+      </div><!-- close grid -->
+    </div>
+  </section>
+
+  <!-- Why Umrah Mandiri -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">Why Umrah Mandiri?</h2>
+        <p class="section-subtitle mx-auto">Semakin banyak orang memilih untuk merencanakan umrah secara mandiri. Inilah alasannya.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 fade-in-up">
+        <div class="text-center">
+          <div class="card-icon mx-auto mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3">Fleksibilitas Waktu</h3>
+          <p class="text-[#5a6f8a] text-sm leading-relaxed">Tentukan sendiri kapan berangkat, berapa lama tinggal, dan bagaimana mengatur hari-hari Anda di Tanah Suci.</p>
+        </div>
+        <div class="text-center">
+          <div class="card-icon mx-auto mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37 1 .608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3">Kontrol Perjalanan</h3>
+          <p class="text-[#5a6f8a] text-sm leading-relaxed">Pilih hotel, penerbangan, dan transportasi sesuai budget dan preferensi Anda sendiri.</p>
+        </div>
+        <div class="text-center">
+          <div class="card-icon mx-auto mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3">Ibadah Lebih Personal</h3>
+          <p class="text-[#5a6f8a] text-sm leading-relaxed">Tanpa keramaian rombongan, Anda bisa beribadah dengan lebih khusyuk, personal, dan penuh makna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/img/kaaba-aerial.webp" alt="" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-[#293e60]/70"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 py-20 text-center fade-in-up relative z-10">
+      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4">Siap Merencanakan Umrah Anda?</h2>
+      <p class="text-white/80 text-lg mb-8">Mulai dengan panduan lengkap kami, atau langsung rencanakan perjalanan Anda.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="umrah-guide.html" class="btn-primary bg-white text-[#293e60] hover:bg-gray-100">Baca Panduan</a>
+        <a href="services.html" class="btn-gold">Lihat Paket Umrah</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <div class="mb-4"><img src="assets/img/logo-wordmark-gold.webp" alt="UMRI - Umroh Mandiri" class="h-12"></div>
+          <p class="text-sm leading-relaxed max-w-sm">
+            More than a trip. A guided journey of worship. UMRI hadir untuk membuat perjalanan suci terasa tenang, jelas, dan bermakna.
+          </p>
+        </div>
+        <div>
+          <h4>PAGES</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="umrah-guide.html">Umrah Guide</a></li>
+            <li><a href="plan-umrah.html">Plan Your Umrah</a></li>
+            <li><a href="makkah-madinah.html">Makkah & Madinah</a></li>
+            <li><a href="services.html">Services & Tools</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <ul class="space-y-2 text-sm">
+            <li>hello@umri.id</li>
+            <li>Instagram: @umri.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-sm">
+        <p>&copy; 2026 UMRI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

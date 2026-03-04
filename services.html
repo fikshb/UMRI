@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Tools - UMRI</title>
+  <meta name="description" content="Paket umrah, layanan visa, dan tools digital dari UMRI untuk membantu perjalanan umrah mandiri Anda.">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html"><img src="assets/img/logo-icon.webp" alt="UMRI" class="h-8 w-8 rounded-md"></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="umrah-guide.html" class="nav-link">Umrah Guide</a>
+        <a href="plan-umrah.html" class="nav-link">Plan Your Umrah</a>
+        <a href="makkah-madinah.html" class="nav-link">Makkah & Madinah</a>
+        <a href="services.html" class="nav-link">Services</a>
+      </div>
+      <div class="md:hidden hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="umrah-guide.html" class="nav-link">Umrah Guide</a>
+    <a href="plan-umrah.html" class="nav-link">Plan Your Umrah</a>
+    <a href="makkah-madinah.html" class="nav-link">Makkah & Madinah</a>
+    <a href="services.html" class="nav-link">Services</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/img/kaaba-aerial.webp" alt="" class="w-full h-full object-cover opacity-15">
+    </div>
+    <div class="hero-inner w-full relative z-10">
+      <div class="max-w-6xl mx-auto px-6 pt-32 pb-20 text-center">
+        <div class="fade-in-up">
+          <div class="gold-line mx-auto mb-6"></div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#293e60] mb-6 leading-tight">
+            Umrah Services & Tools
+          </h1>
+          <p class="text-lg md:text-xl text-[#5a6f8a] max-w-2xl mx-auto mb-10 leading-relaxed">
+            Layanan umrah terpercaya dan tools digital yang dirancang untuk membantu setiap langkah perjalanan Anda ke Tanah Suci.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Umrah Packages -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">Paket Umrah</h2>
+        <p class="section-subtitle mx-auto">Pilih paket yang sesuai dengan kebutuhan dan budget Anda. Semua paket bisa disesuaikan.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 fade-in-up">
+
+        <!-- Paket Hemat -->
+        <div class="pricing-card flex flex-col">
+          <div class="mb-4">
+            <span class="tag tag-blue">Budget Friendly</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#293e60] mb-2">Paket Hemat</h3>
+          <p class="text-2xl font-bold text-[#3a78b3] mb-1">Mulai dari Rp 15 juta</p>
+          <p class="text-sm text-[#5a6f8a] mb-6">/orang</p>
+          <ul class="space-y-3 mb-8 flex-1">
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Hotel bintang 2-3 (jarak 500-800m dari Haram)</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Penerbangan ekonomi (transit)</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Transport bus antar kota</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Visa umrah</span>
+            </li>
+          </ul>
+          <p class="text-xs text-[#5a6f8a] mb-4 italic">Cocok untuk: jamaah yang ingin hemat budget</p>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Hemat%20Umrah." class="btn-primary text-center w-full block" target="_blank">Konsultasi via WhatsApp</a>
+        </div>
+
+        <!-- Paket Nyaman (Featured) -->
+        <div class="pricing-card featured flex flex-col">
+          <div class="mb-4">
+            <span class="tag tag-gold">Most Popular</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#293e60] mb-2">Paket Nyaman</h3>
+          <p class="text-2xl font-bold text-[#3a78b3] mb-1">Mulai dari Rp 25 juta</p>
+          <p class="text-sm text-[#5a6f8a] mb-6">/orang</p>
+          <ul class="space-y-3 mb-8 flex-1">
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Hotel bintang 4 (jarak 200-400m dari Haram)</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Penerbangan ekonomi (direct)</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Haramain train + private transfer</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Visa umrah + asuransi</span>
+            </li>
+          </ul>
+          <p class="text-xs text-[#5a6f8a] mb-4 italic">Cocok untuk: jamaah yang ingin kenyamanan optimal</p>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Nyaman%20Umrah." class="btn-gold text-center w-full block" target="_blank">Konsultasi via WhatsApp</a>
+        </div>
+
+        <!-- Paket Premium -->
+        <div class="pricing-card flex flex-col">
+          <div class="mb-4">
+            <span class="tag tag-navy">Full Service</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#293e60] mb-2">Paket Premium</h3>
+          <p class="text-2xl font-bold text-[#3a78b3] mb-1">Mulai dari Rp 40 juta</p>
+          <p class="text-sm text-[#5a6f8a] mb-6">/orang</p>
+          <ul class="space-y-3 mb-8 flex-1">
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Hotel bintang 5 (walking distance)</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Penerbangan bisnis</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Private car semua perjalanan</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon">
+                <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-sm text-[#5a6f8a]">Visa + asuransi + mutawwif pribadi</span>
+            </li>
+          </ul>
+          <p class="text-xs text-[#5a6f8a] mb-4 italic">Cocok untuk: jamaah yang ingin pengalaman terbaik</p>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Premium%20Umrah." class="btn-primary text-center w-full block" target="_blank">Konsultasi via WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Create Your Own Umrah -->
+  <section class="section section-alt">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">Create Your Own Umrah</h2>
+        <p class="section-subtitle mx-auto">Ingin paket yang disesuaikan sepenuhnya dengan kebutuhan Anda? Isi formulir di bawah dan kami akan membantu merancang perjalanan umrah impian Anda.</p>
+      </div>
+      <div class="fade-in-up">
+        <div class="rounded-2xl overflow-hidden mb-8">
+          <img src="assets/img/madinah-night.webp" alt="Madinah di malam hari" class="w-full h-64 object-cover">
+        </div>
+        <form class="wa-form space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="Nama Lengkap" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+            <div>
+              <label for="jamaah">Jumlah Jamaah</label>
+              <input type="number" id="jamaah" name="Jumlah Jamaah" placeholder="Contoh: 2" min="1" required>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="budget">Estimasi Budget per Orang</label>
+              <select id="budget" name="Estimasi Budget per Orang" required>
+                <option value="" disabled selected>Pilih estimasi budget</option>
+                <option value="< Rp 15 juta">&lt; Rp 15 juta</option>
+                <option value="Rp 15-25 juta">Rp 15-25 juta</option>
+                <option value="Rp 25-40 juta">Rp 25-40 juta</option>
+                <option value="> Rp 40 juta">&gt; Rp 40 juta</option>
+              </select>
+            </div>
+            <div>
+              <label for="durasi">Durasi Perjalanan</label>
+              <select id="durasi" name="Durasi Perjalanan" required>
+                <option value="" disabled selected>Pilih durasi</option>
+                <option value="9 hari">9 hari</option>
+                <option value="12 hari">12 hari</option>
+                <option value="14 hari">14 hari</option>
+                <option value="Custom">Custom</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="keberangkatan">Rencana Keberangkatan</label>
+            <input type="text" id="keberangkatan" name="Rencana Keberangkatan" placeholder="Contoh: Juni 2026">
+          </div>
+          <div>
+            <label for="catatan">Catatan Tambahan</label>
+            <textarea id="catatan" name="Catatan Tambahan" rows="4" placeholder="Preferensi hotel, airline, kebutuhan khusus, dll."></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full text-center">Kirim via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visa Services -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">Layanan Visa</h2>
+        <p class="section-subtitle mx-auto">Urus visa umrah dan visa Saudi dengan mudah. Kami bantu dari awal hingga selesai.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 fade-in-up">
+
+        <!-- Visa Umrah -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
+          </div>
+          <div class="mb-2">
+            <span class="tag tag-blue">Visa Umrah</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-3">Visa Umrah</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed mb-4">
+            Pengurusan visa umrah lengkap dengan panduan dokumen yang dibutuhkan. Proses cepat dan terpercaya.
+          </p>
+          <ul class="space-y-2 mb-4">
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Dokumen:</strong> Paspor (min. 6 bulan berlaku), foto 4x6 latar putih, bukti vaksinasi meningitis</li>
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Timeline:</strong> 5-7 hari kerja</li>
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Harga:</strong> Mulai dari Rp 500.000</li>
+          </ul>
+        </div>
+
+        <!-- Visa Saudi -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 1 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <div class="mb-2">
+            <span class="tag tag-navy">Visa Saudi</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-3">Visa Saudi (Kunjungan/Wisata)</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed mb-4">
+            Untuk jamaah yang ingin memperpanjang waktu di Arab Saudi, mengunjungi kota lain, atau menambah pengalaman wisata setelah umrah.
+          </p>
+          <ul class="space-y-2 mb-4">
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Jenis:</strong> e-Visa kunjungan / wisata</li>
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Durasi:</strong> Hingga 90 hari</li>
+            <li class="text-sm text-[#5a6f8a]"><strong class="text-[#293e60]">Cocok untuk:</strong> Extend perjalanan, wisata Jeddah, Taif, AlUla</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="text-center mt-10 fade-in-up">
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20visa." class="btn-primary" target="_blank">Konsultasi Visa via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UMRI Digital Tools -->
+  <section class="section section-alt">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="section-title">UMRI Digital Tools</h2>
+        <p class="section-subtitle mx-auto">Tools digital yang kami rancang untuk membantu Anda mempersiapkan dan menjalani umrah dengan lebih terstruktur.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in-up">
+
+        <!-- Pocket Book Umrah -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div class="mb-3">
+            <span class="tag tag-gold">Coming Soon</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-2">Pocket Book Umrah</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed">Panduan digital ringkas berisi doa, tata cara, dan checklist umrah. Bisa diakses offline.</p>
+        </div>
+
+        <!-- UMRI Watchlist -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0 0 10 9.87v4.263a1 1 0 0 0 1.555.832l3.197-2.132a1 1 0 0 0 0-1.664z"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <div class="mb-3">
+            <span class="tag tag-gold">Coming Soon</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-2">UMRI Watchlist</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed">Daftar tontonan video persiapan umrah yang dikurasi, dari ritual hingga tips praktis.</p>
+        </div>
+
+        <!-- Template Itinerary -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/></svg>
+          </div>
+          <div class="mb-3">
+            <span class="tag tag-gold">Coming Soon</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-2">Template Itinerary</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed">Template perencanaan perjalanan yang bisa di-customize sesuai durasi dan preferensi.</p>
+        </div>
+
+        <!-- Umrah Planning Kit -->
+        <div class="card">
+          <div class="card-icon mb-4">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0V9a2 2 0 0 0-2-2M5 11V9a2 2 0 0 1 2-2m0 0V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 7h10"/></svg>
+          </div>
+          <div class="mb-3">
+            <span class="tag tag-gold">Coming Soon</span>
+          </div>
+          <h3 class="text-lg font-semibold text-[#293e60] mb-2">Umrah Planning Kit</h3>
+          <p class="text-sm text-[#5a6f8a] leading-relaxed">Paket lengkap berisi spreadsheet budget, packing list, dan timeline persiapan.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-in-up">
+      <h2 class="section-title mb-4">Ada Pertanyaan?</h2>
+      <p class="text-[#5a6f8a] text-lg mb-8">Hubungi kami untuk konsultasi gratis seputar umrah mandiri, paket perjalanan, atau layanan visa.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20umrah%20mandiri." class="btn-primary" target="_blank">Hubungi via WhatsApp</a>
+        <a href="plan-umrah.html" class="btn-secondary">Rencanakan Umrah</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <div class="mb-4"><img src="assets/img/logo-wordmark-gold.webp" alt="UMRI - Umroh Mandiri" class="h-12"></div>
+          <p class="text-sm leading-relaxed max-w-sm">
+            More than a trip. A guided journey of worship. UMRI hadir untuk membuat perjalanan suci terasa tenang, jelas, dan bermakna.
+          </p>
+        </div>
+        <div>
+          <h4>PAGES</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="umrah-guide.html">Umrah Guide</a></li>
+            <li><a href="plan-umrah.html">Plan Your Umrah</a></li>
+            <li><a href="makkah-madinah.html">Makkah & Madinah</a></li>
+            <li><a href="services.html">Services & Tools</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <ul class="space-y-2 text-sm">
+            <li>hello@umri.id</li>
+            <li>Instagram: @umri.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-sm">
+        <p>&copy; 2026 UMRI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
