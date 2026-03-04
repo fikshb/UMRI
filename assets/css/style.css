@@ -797,6 +797,12 @@ h1, h2, h3, h4, h5, h6 {
   h1 {
     font-size: 2rem !important;
   }
+
+  .hero-bg-img {
+    object-fit: contain;
+    object-position: center top;
+    background-color: #1a3a5c;
+  }
 }
 
 @media (max-width: 480px) {
